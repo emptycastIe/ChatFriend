@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" def src="script.js"></script>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>ChatFriend</title>
+</head>
+
+<body>
+    <div class="chat">
+        <div class="chat_title">
+            <div class="chat_avatar">
+                <img src="img/spiderman.jpg" alt="Avator image" />
+            </div>
+
+            <div class="chat_title-name">
+                <div>Spider Man</div>
+                <div>Marvel</div>
+            </div>
+        </div>
+        
+        <div class="chat_content">
+            <div class="chat_content-friend">
+                <div class="chat_avatar">
+                    <img src="img/spiderman.jpg" alt="Avator image" />
+                </div>
+                <div class="line">
+                    <span class="chat_box chat_box-friend">Hi</span>
+                </div>
+            </div>
+            
+            <div class="line">
+                <span class="chat_box mine">Hello!</span>
+            </div>
+        </div>
+        
+        <div class="chat_send">
+            <textarea type="text" class="chat_input" id="input" placeholder="Type message"></textarea>
+            <button type="submit" class="chat_button" id="send">Send</button>
+        </div>
+    </div>
+</body>
+
+</html>
