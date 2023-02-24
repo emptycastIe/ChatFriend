@@ -1,0 +1,172 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(135deg, #f03e3e , #FAD6A6);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background-color: #301514;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #301514;
+}
+
+
+.chat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    max-width: 140rem;
+    width: 50rem;
+    height: 80vh;
+    z-index: 2;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .5);
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+
+.chat_title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1.5rem;
+    text-align: left;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.chat_title-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat_title-name div {
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.chat_title-name div:nth-child(2) {
+    color: rgba(255, 255, 255, .5);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.chat_avatar {
+    border-radius: 10rem;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+        
+.chat_avatar img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+}
+
+
+/**** CHAT BOX ****/
+.chat_content {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1rem 2rem;
+    height: 100%;
+
+    overflow-y: scroll;
+}
+
+.chat_box {
+    padding: 1rem 2rem;
+    border-radius: 1rem 1rem 1rem 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.chat_box-friend {
+    margin-left: 2rem;
+}
+
+/**** CHAT BOX (FRIEND) LITTLE ARROW ****/
+.chat_box-friend::after {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: -1.5rem;
+    width: 0;
+    height: 0;
+    border-top: 1.5rem solid rgba(0, 0, 0, .3);
+    border-left: 15px solid transparent;
+}
+
+.mine::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    right: 0rem;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid #fa5252;
+    border-left: 1rem solid transparent;
+}
+
+.line { 
+    display: flex;
+    margin-top: 4rem;
+}
+
+.mine {
+    margin-left: auto;
+    border-radius: 1rem 1rem 0 1rem;
+    background: #fa5252;
+}
+
+/**** CHAT TEXT AREA ****/
+.chat_send {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    padding: 1.5rem 1rem;
+}
+
+.chat_input {
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    color: rgba(255, 255, 255, .45);
+    font-size: 1.4rem;
+    width: 80%;
+    height: 2rem;
+}
+
+.chat_button {
+    background: #fff;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
